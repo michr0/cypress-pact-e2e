@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cy:open": "cypress open",
+    "test": "run-p dev cy:open"
   },
   "dependencies": {
     "next": "latest",
@@ -11,5 +13,9 @@
     "react-dom": "^17.0.2",
     "swr": "^0.1.18"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^7.7.0",
+    "npm-run-all": "^4.1.5"
+  }
 }
